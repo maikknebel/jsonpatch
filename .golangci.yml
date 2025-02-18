@@ -1,0 +1,129 @@
+run:
+  concurrency: 4
+  timeout: 5m
+
+issues:
+  include:
+    - EXC0012
+    - EXC0013
+    - EXC0014
+    - EXC0015
+
+  # Maximum issues count per one linter.
+  # Set to 0 to disable.
+  # Default: 50
+  max-issues-per-linter: 0
+
+  # Maximum count of issues with the same text.
+  # Set to 0 to disable.
+  # Default: 3
+  max-same-issues: 0
+
+linters:
+  # Enable only fast linters from enabled linters set (first run won't be fast)
+  #  fast: false
+  disable-all: true
+  enable:
+    - asciicheck
+    - bodyclose
+    - copyloopvar
+    - dogsled
+    - errcheck
+    - errorlint
+    - exhaustive
+    - gci
+    - gochecknoinits
+    - gocognit
+    - goconst
+    - gocritic
+    - gocyclo
+    - godot
+    - godox
+    - err113
+    - gofmt
+    - gofumpt
+    - goheader
+    - goimports
+    - gomodguard
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - lll
+    - makezero
+    - misspell
+    - nakedret
+    - nestif
+    - nolintlint
+    - paralleltest
+    - predeclared
+    - revive
+    - rowserrcheck
+    - sqlclosecheck
+    - staticcheck
+    - stylecheck
+    - thelper
+    - tparallel
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace
+    - wrapcheck
+linters-settings:
+  errcheck:
+    check-type-assertions: true
+    check-blank: true
+  govet:
+    enable:
+      - fieldalignment
+  godox:
+    keywords:
+      - BUG
+      - FIXME
+      - HACK
+  gci:
+    sections:
+      - standard
+      - default
+      - prefix(github.com/maikknebel)
+  gocritic:
+    enabled-checks:
+      # Diagnostic
+      - commentedOutCode
+      - nilValReturn
+      - sloppyReassign
+      - weakCond
+
+      # Performance
+      - appendCombine
+      - equalFold
+      - hugeParam
+      - indexAlloc
+      - rangeExprCopy
+      - rangeValCopy
+
+      # Style
+      - boolExprSimplify
+      - commentedOutImport
+      - docStub
+      - emptyFallthrough
+      - emptyStringTest
+      - hexLiteral
+      - methodExprCall
+      - octalLiteral
+      - stringXbytes
+      - typeAssertChain
+      - unlabelStmt
+      - yodaStyleExpr
+
+      # Opinionated
+      - builtinShadow
+      - importShadow
+      - initClause
+      - nestingReduce
+      - paramTypeCombine
+      - ptrToRefParam
+      - typeUnparen
+      - unnecessaryBlock
