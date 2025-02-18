@@ -7,5 +7,5 @@
 
 ## Reporting a Vulnerability
 
-Reportvulnerabilites via email to mr.mog@gmx.de.
+Report vulnerabilities via GitHub: https://github.com/maikknebel/jsonpatch/security/advisories
 
