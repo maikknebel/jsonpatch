@@ -9,8 +9,6 @@ func main() {
 	// foo
 	dst := make([]int, 3)
 
-	for i, x := range src {
-		dst[i] = x
-	}
+	copy(dst, src)
 	println(src)
 }
