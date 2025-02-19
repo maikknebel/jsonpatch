@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/maikknebel/jsonpatch/compare/v0.1.1...v0.1.2) (2025-02-19)
+
+
+### Features
+
+* remove tag-logic from release ([131942c](https://github.com/maikknebel/jsonpatch/commit/131942c4e89a0ce5a37afadcaf562bce8dfbd72e))
+
 ## [0.1.1](https://github.com/maikknebel/jsonpatch/compare/v0.1.0...v0.1.1) (2025-02-19)
 
 
